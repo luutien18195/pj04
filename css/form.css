@@ -1,0 +1,79 @@
+/*BIG-BOX
+=============================================================*/
+#wrapper .menu .big-box{
+	width:80%;
+	margin:0 auto;
+	position:relative;
+}
+/*Button
+=============================================================*/
+.button{
+	width:70px;
+}
+.button span{
+	
+	padding:7px 10px;
+	border:1px solid #fff;
+	text-align: center;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition:all ease 0.4s;
+}
+.button span a{
+	color:#fff;
+	text-align: center;
+	
+}
+.button span:hover {
+	background: #fff;
+	border:1px solid #fff;
+	color:#383737;
+}
+.button span:hover a{
+	color:#383737;
+
+}
+/*Button link
+=============================================================*/
+
+.bt-link a{
+	border:1px solid #fff;
+	width:135px;
+	height:40px;
+	display:inline-block;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition:all ease 0.4s;
+}
+.bt-link a span{
+	color:#fff;
+	font-size: 20px;
+	line-height: 40px;
+}
+.bt-link a:hover {
+	background:#fff;
+	
+}
+.bt-link a:hover span{
+	color :#000;
+	
+}
+/*================*/
+.bnt-link a{
+	border:1px solid #fff;
+	width:100px;
+	height: 40px;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition:all ease 0.4s;
+	padding:15px;
+}
+.bnt-link a span{
+	color:#fff;
+	font-size:20px;
+
+}
+.bnt-link a:hover{
+	background:#fff;
+
+}
+.bnt-link a:hover span{
+	color:#000;
+}

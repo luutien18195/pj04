@@ -1,0 +1,407 @@
+/*Reset css
+=============================================================*/
+*{margin:0;padding 0;}
+li{list-style:none;}
+a{text-decoration: none;font-family:sans-serif;}
+.clr{clear:both;}
+
+@font-face{
+	font-family: duke;
+	src:url("../fonts/duke.woff");
+}
+@font-face{
+	font-family: vnpres-webfont;
+	src: url(../fonts/vnpres-webfont.woff);
+}
+
+/*HEADER
+==========================================================================================*/
+#wrapper {
+	width:100%;
+}
+/*============  	MENU	==================*/
+
+header{
+	position:relative;
+
+}
+
+#wrapper .menu {
+	height:60px;
+	background:#141414;
+	position: relative; 
+}
+#wrapper .menu .title {
+	width:150px;
+	
+	margin-left: 120px;
+	text-align: center;
+}
+#wrapper .menu .title h3{
+	color:#64952C;
+	float:left;
+	line-height: 60px;
+	font-family: vnpres-webfont;
+	font-size: 40px;
+}
+#wrapper .menu nav {
+
+}
+#wrapper .menu nav ul{
+	padding-left:80px;
+	float :left;
+	width:500px;
+} 
+#wrapper .menu nav>ul>li{
+	display:inline-block;
+	line-height: 60px;
+	padding-left:25px;
+	position:relative;
+		
+}
+#wrapper .menu nav >ul >li >a{
+	color:#fff;
+
+}
+#wrapper .menu nav >ul >li:hover >a, #wrapper .menu nav >ul >li >a.active{
+	border-bottom:1px solid #fff;
+}
+#wrapper .menu nav ul li:hover >ul.sub-menu{
+	display:block;
+}
+/*============  	SUB-MENU	==================*/
+
+
+
+#wrapper .menu ul.sub-menu{
+	display:inline-table;
+	background:#2D2A29;
+	position:absolute;
+	padding:0px;
+	border-bottom: 1px solid #fff;	
+	border-radius:5px;
+	width:174px;
+	opacity:0.9;
+	display:none;
+	z-index: 1;
+
+}
+
+#wrapper .menu ul.sub-menu li{
+	padding:3px 12px;
+	display:inline-table;
+	width:150px;
+	transition: background 0.3s;
+}
+#wrapper .menu ul.sub-menu li a{
+	color:#C6C6C6;
+	transition: color 0.3s;
+}
+
+#wrapper .menu ul.sub-menu li:hover{
+	background:#170D07;	
+}
+#wrapper .menu ul.sub-menu li:hover a{
+	color:#fff;
+}
+/*============  	search	==================*/
+
+
+#wrapper .menu .search{
+	display:inline-block;
+	height: 60px;
+}
+#wrapper .menu .search span{
+	
+	position: relative;
+}
+#wrapper .menu .search span input{
+	text-indent: 12px;
+	border-color:#fff;
+	border-radius: 4px;
+	height: 23px;
+	margin-right: 15px;
+
+}
+#wrapper .menu .search span img{
+	position: absolute;
+	top:3px;
+	right:23px;
+
+}
+#wrapper .menu .search .bt-search{
+	display:inline-block;
+	height: 60px;
+	line-height: 60px;
+}
+#wrapper .menu .search .bt-search a{
+	
+}
+/*============ background-header ==================*/
+#wrapper .bgheader{
+	
+	width:100%;
+	z-index: 0;
+	overflow: hidden;
+}
+#wrapper .bgheader .img{
+	
+
+	background: url(../images/restaurant01.jpg) ;
+	background-position:center center;
+	background-attachment: fixed;
+	background-size:cover;
+}
+#wrapper .bgheader .img .container{
+	max-width:100%;
+	height:430px;
+	background:linear-gradient(to right,rgb(0, 30, 33) 20%,#000000 60%,#522804 );
+	opacity:0.8;
+}
+/*============ box-title ==================*/
+#wrapper .bgheader .img .container .box-title{
+	width:556px;
+	margin:0 auto;
+	
+	position: relative;
+	padding:134px;
+}
+#wrapper .bgheader .img .container .box-title .title{
+	color:#fff;
+	font-weight: bold;
+	font-size:50px;
+	font-family: vnpres-webfont;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#wrapper .bgheader .img .container .box-title .line{
+	height:1px;
+	background: #fff;
+	margin-bottom: 15px;
+}
+#wrapper .bgheader .img .container .box-title .content{text-align: center;}
+#wrapper .bgheader .img .container .box-title .content p{
+	color:#E4FF00;
+	padding-top:5px;
+	
+}
+#wrapper .bgheader .img .container .box-title .content span{
+	font-style: italic;
+	color:#fff;
+	font-size:14px;
+	text-align: center;
+}
+#wrapper .bgheader .img .container .box-title .bnt-link{
+	text-align: center;
+	margin-top:40px;
+}
+/*SECTION
+==========================================================================================*/
+#section {
+	
+	width:100%;
+	
+	background-color: #E4E4E4;
+	
+}
+#section #main-row01{
+	width:80%;
+	margin:0 auto;
+	padding:20px 20px;
+	text-align: center;
+}
+
+#section #main-row01 .col{
+	width:258px;
+	display:inline-block;
+	border:1px solid #fff;
+	text-align: center;
+	background-color: #fff;
+	margin:40px;
+	border-radius:5px;
+	position: relative;
+	-webkit-transition:all ease 0.3s;
+	-moz-transition:all ease 0.3s;
+	box-shadow: 0 4px 6px 0 #484848, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#section #main-row01 a:hover .col{
+	border:1px solid #fff;
+	box-shadow: 0 4px 25px 0 #484848, 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#section #main-row01 .col .img{
+	overflow: hidden;
+	height:250px;
+	width:100%;
+}
+#section #main-row01 .col .img img{
+	position: relative;
+	top:0;
+	left:0;
+	width:265px;
+	height:250px;
+	z-index: 0.1;
+	-webkit-transition:all ease 0.4s;
+	-moz-transition:all ease 0.4s;
+}
+#section #main-row01 .col .small-img img{
+	
+	border-radius:50%;
+	width:100px;
+	height: auto;
+	position: absolute;
+	top: 189px;
+    left: 81px;
+}
+#section #main-row01 a:hover .col .img img{
+	width:275px;
+	height:265px;
+}
+#section #main-row01 .col .title{
+
+}
+#section #main-row01 .col .title h3{
+	margin-top: 45px;
+    margin-bottom: 20px;
+    font-family: vnpres-webfont;
+    font-size: 27px;
+    font-weight: bold;
+    color:#000;
+}
+#section #main-row01 .col .line{
+	height: 1px;
+	background: #7C7C7C;
+	margin-bottom: 10px
+}
+#section #main-row01 .col .content{
+
+}
+#section #main-row01 .col .content p{
+	line-height: 25px;
+	margin-bottom: 20px;
+	color:#7B7272;
+}
+/*SECTION 2
+==========================================================================================*/
+
+#section2{
+	width:100%;
+	padding-bottom: 20px;
+	background:url(../images/bg-wood.jpg) top no-repeat;
+	background-size:cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+#section2 .main-row02{
+	width:80%;
+	margin:0 auto;
+	margin-bottom:30px;
+}
+#section2 .main-row02 .title{
+	
+}
+#section2 .main-row02 .title h3{
+	font-family: vnpres-webfont;
+	color:#fff;
+	text-align: center;
+	padding:55px 0;	
+	font-size: 50px;
+
+}
+#section2 .main-row02 .content{}
+#section2 .main-row02 .content .sub-box{
+	width:334px;
+	height: 300px;
+	position:relative;
+	display:inline-block;
+	margin:3px;
+	overflow: hidden;
+	border-radius:6px;
+}
+#section2 .main-row02 .content .sub-box img{
+	width:350px;
+	height:300px;
+	-webkit-transition:all ease 0.4s;
+	-moz-transition:all ease 0.4s;
+}
+#section2 .main-row02 .content .sub-box .sub-ct{
+	width: 350px;
+	height: 300px;
+	position:absolute;
+	background-color:#000;
+	opacity:0;
+	top:-300px;
+	left:0px;
+	border-radius: 6px;
+	-webkit-transition: all ease 0.65s;
+	-moz-transition:all ease 0.65s;
+}
+#section2 .main-row02 .content .sub-box .sub-ct .line{
+	background: #fff;
+	height: 1px;
+	margin-bottom: 20px;
+}
+#section2 .main-row02 .content .sub-box .sub-ct h3
+{
+	color:#fff;
+	text-align: center;
+	padding:20px 0;
+	font-size: 30px;
+	font-family:vnpres-webfont;
+}
+#section2 .main-row02 .content .sub-box .sub-ct p
+{
+	color:#fff;
+	text-align: center;
+	padding-bottom: 20px;
+}
+#section2 .main-row02 .content .sub-box .sub-ct >span
+{
+	color:#fff;
+	text-align: center;
+	font-size: 35px;
+	display:block;
+	padding-bottom: 20px;
+}
+#section2 .main-row02 .content .sub-box .sub-ct .bt-link{text-align: center;}
+#section2 .main-row02 .content .sub-box:hover img{
+	width:385px;
+	height:350px;
+	-webkit-transform:rotate(-2deg);
+	-moz-transform:rotate(-2deg);
+}
+#section2 .main-row02 .content .sub-box:hover .sub-ct{
+	opacity: 0.7;
+	top:0;
+}
+/*SECTION 3
+==========================================================================================*/
+
+#section3 {
+	width:100%;
+	background:url(..);
+}
+#section3 .main-row03{
+	width:80%;
+	margin:0 auto;
+}
+#section3 .main-row03 h3{
+	color:#000;
+	text-align: center;
+	padding:20px 0;
+	font-size: 50px;
+	font-family:vnpres-webfont;
+}
+#section3 .main-row03 .content{
+
+}
+#section3 .main-row03 .content .sub-row{
+	
+	padding:20px;
+}
+#section3 .main-row03 .content .sub-row img{
+	
+
+}
+#section3 .main-row03 .content .sub-row .sub-content{
+	
+}
